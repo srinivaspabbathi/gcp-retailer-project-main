@@ -7,7 +7,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.orders`(
 )
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://retailer-datalake-project-27032025/landing/retailer-db/orders/*.json']
+  uris = ['gs:// retailer-datalake-project-28062025/landing/retailer-db/orders/*.json']
 );
 
 CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.customers`
@@ -19,7 +19,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.customers
 )
 OPTIONS (
     format = 'JSON',
-    uris = ['gs://retailer-datalake-project-27032025/landing/retailer-db/customers/*.json']
+    uris = ['gs:// retailer-datalake-project-28062025/landing/retailer-db/customers/*.json']
 );
 
 CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.products`
@@ -32,7 +32,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.products`
 )
 OPTIONS (
     format = 'JSON',
-    uris = ['gs://retailer-datalake-project-27032025/landing/retailer-db/products/*.json']
+    uris = ['gs:// retailer-datalake-project-28062025/landing/retailer-db/products/*.json']
 );
 
 CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.categories`
@@ -43,7 +43,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.categorie
 )
 OPTIONS (
     format = 'JSON',
-    uris = ['gs://retailer-datalake-project-27032025/landing/retailer-db/categories/*.json']
+    uris = ['gs:// retailer-datalake-project-28062025/landing/retailer-db/categories/*.json']
 );
 
 CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.order_items`
@@ -57,7 +57,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.order_ite
 )
 OPTIONS (
     format = 'JSON',
-    uris = ['gs://retailer-datalake-project-27032025/landing/retailer-db/order_items/*.json']
+    uris = ['gs:// retailer-datalake-project-28062025/landing/retailer-db/order_items/*.json']
 );
 -------------------------------------------------------------------------------------------------------------
 -- Suppliers Table
@@ -74,7 +74,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.suppliers
 )
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://retailer-datalake-project-27032025/landing/supplier-db/suppliers/*.json']
+  uris = ['gs:// retailer-datalake-project-28062025/landing/supplier-db/suppliers/*.json']
 );
 
 -- Product Suppliers Table (Mapping suppliers to products)
@@ -86,7 +86,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `gcp-bigdata-458711.bronze_dataset.product_s
 )
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://retailer-datalake-project-27032025/landing/supplier-db/product_suppliers/*.json']
+  uris = ['gs:// retailer-datalake-project-28062025/landing/supplier-db/product_suppliers/*.json']
 );
 
 -------------------------------------------------------------------------------------------------------------
@@ -101,7 +101,7 @@ CREATE OR REPLACE EXTERNAL TABLE `gcp-bigdata-458711.bronze_dataset.customer_rev
 )
 OPTIONS (
   format = 'PARQUET',
-  uris = ['gs://retailer-datalake-project-27032025/landing/customer_reviews/customer_reviews_*.parquet']
+  uris = ['gs:// retailer-datalake-project-28062025/landing/customer_reviews/customer_reviews_*.parquet']
 );
 
 -------------------------------------------------------------------------------------------------------------
